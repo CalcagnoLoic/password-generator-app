@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: jetbrainMono;
-    src: url(../../assets/font/JetBrains_Mono/static/JetBrainsMono-Regular.ttf);
+    src: url(JetBrainsMono-Regular);
 }
 
 @layer base {
