@@ -4,7 +4,7 @@
     "coverage": "vitest --coverage",
     "dev": "tsc --watch",
     "test": "vitest",
-    "design": "npx tailwindcss -i ./assets/style/input.css -o ./dist/style/output.css --watch",
+    "design": "npx tailwindcss -i ./assets/style/input.css -o ./dist/style/output.css",
     "linter": "eslint --ignore-path .eslintignore --ext .ts ."
   },
   "devDependencies": {

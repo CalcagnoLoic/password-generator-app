@@ -1,0 +1,20 @@
+name: Deployment of password generator to GH pages
+
+on: 
+    push: 
+        branches:
+            - main
+
+jobs:
+    lint_and_test:
+        runs-on: ubuntu
+
+        steps: 
+            - uses: actions/checkout@v4
+            - uses: actions/setup-node@v4
+              with: 
+                node-version: 20
+                cache: 'npm'
+            - run: npm ci
+            - run: npm run linter
+            - run: npm run test
