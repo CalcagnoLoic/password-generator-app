@@ -1,17 +1,11 @@
 {
-    "compilerOptions": {
-        "outDir": "dist",
-        "target": "ES2015",
-        "module": "ES6",
-        "strict": true,
-        "noImplicitAny": true
-    },
-    "include": [
-        "assets/scripts/main.ts",
-        "assets/scripts/functions/generatePassword.ts"
-    ],
-    "exclude": [
-        "node_modules",
-        "assets/scripts/functions/*.spec.ts"
-    ]
+  "compilerOptions": {
+    "outDir": "dist",
+    "target": "ES2015",
+    "module": "ES6",
+    "strict": true,
+    "noImplicitAny": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "src/tests/*.spec.ts"]
 }

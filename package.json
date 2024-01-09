@@ -4,8 +4,9 @@
     "coverage": "vitest --coverage",
     "dev": "tsc --watch",
     "test": "vitest",
-    "design": "npx tailwindcss -i ./assets/style/input.css -o ./dist/style/output.css",
-    "linter": "eslint --ignore-path .eslintignore --ext .ts ."
+    "design": "npx tailwindcss -i ./public/style/input.css -o ./dist/style/output.css",
+    "linter": "eslint --ignore-path .eslintignore --ext .ts .",
+    "format": "prettier --write ."
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.14.0",
