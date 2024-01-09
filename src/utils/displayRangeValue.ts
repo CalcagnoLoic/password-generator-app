@@ -4,5 +4,11 @@ export const displayRangeValue = (): void => {
     "input[type='range']",
   ) as HTMLInputElement;
 
-  if (value && rangeValue) value.innerHTML = rangeValue.value;
+  if (value && rangeValue) {
+    value.innerHTML = rangeValue.value;
+    rangeValue.addEventListener("input", () => {
+      value.innerHTML = rangeValue.value;
+    });
+  }
 };
+

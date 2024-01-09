@@ -3,6 +3,7 @@ import { copyPaste } from "./utils/copyPaste.js";
 import { passwordStrength } from "./utils/passwordStrength.js";
 import { displayRangeValue } from "./utils/displayRangeValue.js";
 import { scoringStrength } from "./utils/scoringStrength.js";
+import { resetCheckboxes } from "./resetFunctions/resetCheckboxes.js";
 
 const handleGenerate = () => {
   const form = document.querySelector(".form");
@@ -56,6 +57,15 @@ const handleGenerate = () => {
   }
 
   copyPaste();
+
+  window.addEventListener("load", () => {
+    displayRangeValue();
+  });
 };
 
-handleGenerate();
+const main = () => {
+  handleGenerate();
+  resetCheckboxes();
+};
+
+main();
