@@ -9,15 +9,15 @@ Application for generating a random password containing lowercase and uppercase 
 </p>
 
 <p align="center">
-    <img src="assets/img/readme.png" alt="readme">
+    <img src="public/img/readme.png" alt="readme">
 </p>
 
 When the password is generated, the form returns the password strength based on the elements present, as well as the password length.
 
 | When the password is too weak | When the password is weak |
 | ----------------------------- | ------------------------- |
-| ![](assets/img/tooweak.png)   | ![](assets/img/weak.png)  |
+| ![](public/img/tooweak.png)   | ![](public/img/weak.png)  |
 
 | When the password is medium | When the password is strong |
 | --------------------------- | --------------------------- |
-| ![](assets/img/medium.png)  | ![](assets/img/strong.png)  |
+| ![](public/img/medium.png)  | ![](public/img/strong.png)  |
