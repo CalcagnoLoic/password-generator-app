@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 
-import { scoringStrength } from "../utils/scoringStrength";
+import { scoringStrength } from "./scoringStrength";
 
 describe("scoringStrength Unit Test Suites", () => {
   it("should be return something", () => {
